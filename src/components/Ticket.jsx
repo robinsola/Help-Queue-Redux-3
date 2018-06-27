@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function Ticket(props){
   let ticketStyle = {
-    backgroundColor: 'green',
+    backgroundColor: '#21afad',
     color: 'white',
   }
   return (
