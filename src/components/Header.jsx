@@ -25,22 +25,22 @@ function Header(){
             margin-right: 50px;
           }
           `}
-        </style>
-        <div className="flexMe">
-          <div>
-            <img src={epi}/>
-          </div>
-          <div>
-            <h1>Help Queue!</h1>
-          </div>
-          <div>
-            <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link>
-          </div>
+      </style>
+      <div className="flexMe">
+        <div>
+          <img src={epi}/>
+        </div>
+        <div>
+          <h1>Help Queue!</h1>
+        </div>
+        <div>
+          <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link> | <Link to="/admin">Admin</Link>
         </div>
       </div>
-    )
-  }
+    </div>
+  )
+}
 
 
 
-  export default Header
+export default Header

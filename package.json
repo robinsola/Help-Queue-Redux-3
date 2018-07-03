@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src/*jsx; exit 0",
-    "lint-fix": "eslint src/*jsx --fix; exit 0",
+    "lint": "eslint src/components/*jsx; exit 0",
+    "lint-fix": "eslint src/components/*jsx --fix; exit 0",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open"
   },
