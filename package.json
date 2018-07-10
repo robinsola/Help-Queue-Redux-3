@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint src/components/*jsx; exit 0",
     "lint-fix": "eslint src/components/*jsx --fix; exit 0",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest; exit 0",
     "start": "webpack-dev-server --open"
   },
   "author": "",
@@ -15,12 +15,15 @@
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-redux": "^5.0.6",
     "react-router-dom": "^4.0.0",
+    "redux": "^3.7.2",
     "styled-jsx": "^2.2.7",
     "uuid": "^3.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
+    "babel-jest": "^20.0.3",
     "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
@@ -29,6 +32,7 @@
     "eslint-plugin-react": "^7.5.1",
     "file-loader": "^1.1.6",
     "html-webpack-plugin": "^2.29.0",
+    "jest": "^20.0.4",
     "moment": "^2.18.1",
     "react-hot-loader": "^3.0.0-beta.7",
     "url-loader": "^0.6.2",
