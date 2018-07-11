@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import epi from '../assets/images/epi.jpg'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import epi from '../assets/images/epi.jpg';
 
 function Header(){
 
@@ -38,9 +38,9 @@ function Header(){
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 
 
-export default Header
+export default Header;
