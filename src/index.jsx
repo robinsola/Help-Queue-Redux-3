@@ -15,14 +15,14 @@ let unsubscribe = store.subscribe(() =>
 
 const render = (Component) => {
   ReactDOM.render(
-    <Provider store={store}>
-      <HashRouter>
+    <HashRouter>
+      <Provider store={store}>
         <Component/>
-      </HashRouter>
-    </Provider>,
+      </Provider>
+    </HashRouter>,
     document.getElementById('react-app-root')
-  )
-}
+  );
+};
 
 render(App)
 
@@ -31,6 +31,6 @@ render(App)
 if (module.hot) {
   module.hot.accept('./components/App', () => {
     render(App)
-  })
+  });
 }
 /*eslint-enable */
