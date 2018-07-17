@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import c from './../constants';
+import constants from './../constants';
 
+const { c } = constants;
 
 function Ticket(props){
 

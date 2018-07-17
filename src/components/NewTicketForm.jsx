@@ -3,7 +3,10 @@ import Moment from 'moment';
 import { connect } from 'react-redux';
 import { v4 } from 'uuid';
 import PropTypes from 'prop-types';
-import c from './../constants';
+import constants from './../constants';
+import { addTicket } from './../actions';
+
+const { c } = constants;
 
 function NewTicketForm(props){
   console.log(props);
@@ -23,7 +26,7 @@ function NewTicketForm(props){
       timeOpen: new Moment(),
       formattedWaitTime: new Moment().fromNow(true)
     };
-    dispatch(action);
+    dispatch(addTicket(_names.value, _location.value, _issue.value));
     _names.value = '';
     _location.value = '';
     _issue.value = '';

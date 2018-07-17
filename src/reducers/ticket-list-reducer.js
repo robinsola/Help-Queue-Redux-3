@@ -1,4 +1,6 @@
-import c from './../constants';
+import constants from './../constants';
+
+const { c } = constants;
 
 export default (state = {}, action) => {
   let newState;
@@ -22,6 +24,10 @@ export default (state = {}, action) => {
     newState = Object.assign({}, state, {
       [id]: newTicket
     });
+    return newState;
+  case c.RECEIVE_TICKET:
+    newState = Object.assign({}, state);
+    newState[action.ticket.id] = action.ticket;
     return newState;
   default:
     return state;
